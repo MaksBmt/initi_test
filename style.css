@@ -1,0 +1,95 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.field {
+    flex-grow: 1;
+    overflow: hidden;
+    margin: 15px;
+    border: 1px solid green;
+}
+
+.field__game {
+    align-items: center;
+}
+
+.control {
+    padding: 15px;
+    border: 1px solid green;
+}
+
+.control__button {
+    padding: 8px 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+    @media(min-width: 500px) {
+        margin-bottom: 0;
+    }
+}
+
+.control__wrap {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.control__wrap--input {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.control__wrap-size {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border: 1px solid green;
+    border-radius: 10px;
+}
+
+.control__input-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 200px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+
+    @media(min-width: 681px) {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+.control__input-box--time {
+    width: 320px;
+
+    @media(min-width: 681px) {
+        margin-top: 15px;
+    }
+
+    @media(min-width: 1017px) {
+        margin-left: 15px;
+    }
+}
+
+.control__label {
+    margin-right: 15px;
+}
+
+.control__input {
+    width: 50px;
+    padding: 4px;
+    margin-left: auto;
+}
